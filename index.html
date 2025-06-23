@@ -8,69 +8,162 @@
     <title>My portfolio</title>
 </head>
 <body>
-    <header>
+   <header>
         <div class="logo">
             <img src="/logos/personal15-removebg-preview.png" alt="logo">
             <h1>H U M B L E</h1>
         </div>
-
+        <input type="checkbox" id="check">
         <nav>
-            <a href="">Home</a>
-            <a href="">Resume</a>
-            <a href="">About Me</a>
-            <a href="">Contact</a>
+            <a href="#">Home</a>
+            <a href="#">Resume</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact</a>
         </nav>
+
+        <label class="handburger" for="check">
+           <i class="fa-solid fa-bars"></i>
+        </label>
     </header>
 
-    <div class="intro">
+    <section class="intro">
         <div class="name">
-            <p class="pname">Hello, my name is</p>
+            <p id="pn">Hello, my name is</p>
             <h1>HUMBLE</h1>
-            <P>
-                A passionate and dedicated junior web developer, driven by the over-evolving world of technogy and its limitless possibilities
-            </P>
-            <a href=""><button>Contact Me</button></a>
+            <p>
+                A passionate and dedicated junior web developer, driven by the ever-evolving world of technology and its limitless possibilities.
+            </p>
+            <a href="#"><button>Contact Me</button></a>
         </div>
         <div class="photo">
-            <img src="/images/humble-1.jpg" alt="my picture">
+            <img src="/images/humble-1.jpg" alt="My picture">
         </div>
-    </div>
+    </section>
 
-    <div class="about-me">
+    <section class="about-me">
         <div class="pic">
-            <img src="/images/humble-2.jpg" alt="my picture">
+            <img src="/images/humble-2.jpg" alt="My picture">
         </div>
         <div class="who-i-am">
-            <span>
+            <div class="heading">
                 <i class="fa-solid fa-play"></i>
-                <h5>Who i am</h5>
-            </span>
+                <h5>Who I Am</h5>
+            </div>
             <p>
-                My name is Ayogu Emmanuel Onyedikachi, and i am a passionate frontend web developer. I have always been fascinated by the intersection of design and technology, and i am thriled to be able to bring my creative ideas to life through coding. My primary focus is on frontend development.
+                My name is Ayogu Emmanuel Onyedikachi, and I am a passionate frontend web developer. I have always been fascinated by the intersection of design and technology, and I am thrilled to bring my creative ideas to life through coding. My primary focus is on frontend development.
             </p>
 
-            <div class="html-js">
+            <div class="skills">
                 <span>HTML</span>
                 <span>CSS3</span>
-                <span>javaScript</span>
-                <span>sass</span>
+                <span>JavaScript</span>
+                <span>SASS</span>
                 <span>Node.js</span>
             </div>
-            <a href=""><button class="cv">Download CV</button></a>
+            <a href="#"><button class="cv">Download CV</button></a>
+        </div>
+    </section>
+
+    <div class="services">
+        <h1>
+             <i class="fa-solid fa-play"></i>
+             <p>My Services</p>
+        </h1>
+        <h2>
+            What can i do?
+        </h2>
+
+        <menu>
+            <div>
+                <i class="fa-solid fa-pen"></i>
+               <h4>
+                Responsive Design
+               </h4>
+                <p>
+                   I Ensure a seamless user experience across devices.
+
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h4>
+                    Clean and Modern Design
+                </h4>
+                <p>
+                  I Use a simple, intuitive layout and modern design elements.
+
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-desktop"></i>
+               <h4>
+                 Branding
+               </h4>
+                <p>
+                 I Establish a consistent visual identity throughout the website.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-people-line"></i>
+               <h4>
+                 Version Control
+               </h4>
+
+                <p>
+                    I Use GitHub to showcase my code and collaboration skills.
+
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-pied-piper-hat"></i>
+               <h4>
+                 Contact Page
+               </h4>
+
+                <p>
+                    I Make it easy for potential clients or collaborators to reach out.
+                </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-squarespace"></i>
+               <h4>
+                 Frameworks and Libraries
+               </h4>
+
+                <p>
+                    Consider using popular frameworks like React, Angular, or Vue.js.
+                </p>
+            </div>
+        </menu>
     </div>
 
-    <div class="what-i-can-do">
-       <span>
-         <i class="fa-solid fa-play"></i>
-         <h3>My services</h3>
-       </span>
-       <h1>What i can do</h1>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
+    <div class="colab">
+         <div class="h1-p">
+            <h1>
+                Lets work together on your next project
+            </h1>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, fugiat at voluptatem illum, earum corporis nemo neque dolorum reiciendis tenetur facilis aliquam commodi esse. Autem praesentium laudantium maiores unde facilis.
+            </p>
+         </div>
+         <div class="tel">
+            <a href=""><button>Contact me</button></a>
+         </div>
     </div>
+
+    <div class="social">
+        <img src="/logos/personal15-removebg-preview.png" alt="logo">
+        <span id="s2">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </span>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 HUMBLE, All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
