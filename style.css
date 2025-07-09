@@ -30,6 +30,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 1em;
+    margin-left: 2em;
 }
 
 .logo img {
@@ -51,7 +52,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 70%;
+    width: 30%;
     justify-content: space-between;
     padding: 0.1em;
 }
@@ -67,8 +68,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #939eb0;
-    color: #fff;
+    background-color:transparent;
+    color:#ff0000;
     border-radius: 1.5em;
     padding: 0.5em;
     opacity: 1;
@@ -163,8 +164,16 @@ nav a:hover {
     object-fit: cover;
     border-radius: 20px;
     border: #939eb0 0.2em solid;
-    box-shadow: #fff 1em 1em 1em;
+    /* box-shadow: #fff 1em 1em 1em; */
+    cursor: pointer;
      transition: 
+        transform 3s ease-in-out,
+        background-color 2s ease,
+        box-shadow 0.4s ease;
+        &:hover{
+             transform: translateY(10px) scale(1.03);
+        }
+    
 }
 
 
@@ -185,7 +194,14 @@ nav a:hover {
     object-fit: cover;
     border-radius: 20px;
     border: #939eb0 0.2em solid;
-    box-shadow: #fff 1em 0.5em 1em;
+    /* box-shadow: #fff 1em 0.5em 1em; */
+     transition: 
+        transform 3s ease,
+        background-color 2s ease,
+        box-shadow 0.4s ease;
+        &:hover{
+             transform: translateY(10px) scale(1.03);
+        }
 }
 
 .who-i-am {
@@ -402,20 +418,22 @@ menu div p{
     justify-content: space-between;
     padding: 6em;
     border-top: #ff0000 0.1px solid;
-    img{
-        width: 8em;
-    }
+    gap: 4em;
+}
+
+.social img{
+    width: 4em;
 }
 
 #s2{
-    width: 15em;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.5em;
     i{
         color: #ff0000;
-        font-size: 1.5em;
+        font-size: 1em;
         width: 1.5em;
         height: 1.5em;
         background-color: #fff;
@@ -442,6 +460,203 @@ footer{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.2em;
         text-align: center;
+    }
+}
+
+/* contact me page */
+.contact-me{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4em;
+
+     img{
+        width: 4em;
+    }
+    p{
+        color: #fff;
+    }
+}
+
+.contact{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* about me page */
+.about-mee{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+
+    span{
+        width: 100%;
+        display: flex;
+        padding: 2em;
+        padding-top: 6.5em;
+        cursor: pointer;
+
+        .img1{
+            width: 100%;
+            height: 50vh;
+            object-fit:cover;
+        }
+        .img2{
+            width: 100%;
+            height: 50vh;
+            object-fit:cover;
+        }
+    }
+
+    .pguy{
+        color:black;
+        font-family: 'Courier New';
+        padding: 2em;
+        font-size: 2em;
+        cursor: pointer;
+        transition: all 1s 2s ease-in-out;
+
+        &:hover{
+            color: #ff0000;
+        }
+    }
+}
+
+.what-i-like{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: safe;
+    padding: 4em;
+    gap: 1em;
+    background-color: #ffffff;
+    
+    h1{
+        font-family: monospace;
+        color: #ff0000;
+    }
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1em;
+    /* color: #ff0000; */
+}
+
+/* resume */
+.resume{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    margin-top: 8em;
+    gap: 2em;
+    cursor: pointer;
+}
+.resume .humble-web-developer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        font-family: arial;
+        font-size: 4em;
+    }
+
+    p{
+        font-size: 2em;
+        font-family: arial;
+    }
+}
+
+.resume .profile-detail{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding:0 10em 0 10em;
+    h1{
+        font-family: arial;
+        font-size: 3em;
+    }
+
+    p{
+        font-family: arial;
+        font-size: 2em;
+    }
+}
+
+.resume .experience-abc{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10em 0 10em;
+    gap: 1em;
+    h1{
+        font-family: arial;
+        font-size: 3em;
+    }
+
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3{
+            font-family: arial;
+            font-size: 2em;
+        }
+
+        p{
+            font-family: arial;
+            font-size: 2em;
+        }
+    }
+
+    p{
+        font-family: arial;
+        font-size: 2em;
+    }
+
+    ul{
+        font-family: arial;
+        font-size: 2em;
+    }
+}
+
+.education-skill{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10em 0 10em;
+
+    h1{
+        font-family: arial;
+        font-size: 3em;
+    }
+
+    span{
+        font-family: arial;
+        font-size: 2em;
     }
 }
 
@@ -623,5 +838,103 @@ footer{
         p{
             font-size: 0.8em;
         }
+    }
+
+    .about-mee{
+
+    }
+
+    .about-mee span{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .about-mee .pguy{
+        font-size: 1em;
+        /* color: green; */
+        padding: 0.5em;
+        margin-top: 0.5em;
+    }
+
+    .what-i-like{
+        margin-top: 10em;
+        padding: 0.5em ;
+    }
+
+    .resume .humble-web-developer{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .resume .profile-detail{
+        flex-direction: column;
+        padding: 1em;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 2em;
+        }
+
+        p{
+            font-size: 1.2em;
+        }
+    }
+
+    .resume .experience-abc{
+        flex-direction: column;
+        padding: 1em;
+        align-items: center;
+        justify-content: center;
+
+         h1{
+        font-family: arial;
+        font-size: 2em;
+    }
+
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3em;
+
+        h3{
+            font-family: arial;
+            font-size: 1em;
+        }
+
+        p{
+            font-family: arial;
+            font-size: 1em;
+        }
+    }
+
+    p{
+        font-family: arial;
+        font-size: 1.5em;
+    }
+
+    ul{
+        font-family: arial;
+        font-size: 1em;
+    }
+    }
+
+    .resume .education-skill{
+        padding: 1em;
+        gap: 2em;
+         h1{
+        font-family: arial;
+        font-size: 1.5em;
+    }
+
+    span{
+        font-family: arial;
+        font-size: 0.7em;
+    }
+    }
+
+    .contact-me p{
+        width:fit-content;
+        font-size: 0.5em;
     }
 }
